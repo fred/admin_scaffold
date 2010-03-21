@@ -9,32 +9,6 @@ module ApplicationHelper
     lang
   end
   
-  def cart_items
-    if session[:cart] && session[:cart].items
-      Item.find(session[:cart].items)
-    else
-      []
-    end
-  end
-  
-  def featured_item_title(bol)
-    if bol
-      "text-shadow" 
-    end
-  end
-  
-  def setup_item(item)
-    returning(item) do |p|
-      p.assets.build if p.assets.empty?
-    end
-  end
-  
-  def add_asset_link(name) 
-    link_to_function name do |page| 
-      page.insert_html :bottom, :assets, :partial => 'asset', :object => Asset.new 
-    end 
-  end
-  
   def show_admin_content?
     authorized?
   end

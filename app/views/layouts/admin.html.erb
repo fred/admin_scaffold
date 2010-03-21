@@ -64,10 +64,6 @@
       <div id="main">
         
         <div class="content">
-          
-          <%= content_for_admin_menu %>
-          
-          <div class="<%=show_settings_menu?%>">
             
             <% if flash[:error] %>
               <div class="error">
@@ -88,9 +84,7 @@
             <% end %>
             
             <%= yield %>
-            
-          </div>
-          
+                      
         </div>
         
       </div>
