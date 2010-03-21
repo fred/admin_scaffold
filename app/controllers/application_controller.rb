@@ -12,9 +12,9 @@ class ApplicationController < ActionController::Base
   # filter_parameter_logging :password
   filter_parameter_logging :password, :password_confirmation
   
-  #before_filter :get_locale, :get_site, :store_location
+  before_filter :get_locale, :store_location
   
-  #before_filter :set_iphone_format
+  before_filter :set_iphone_format
   
   def is_iphone_request?
     request.user_agent.downcase =~ /(mobile\/.+safari)|(iphone)|(ipod)|(blackberry)|(symbian)|(series60)|(android)|(smartphone)|(wap)|(mobile)/

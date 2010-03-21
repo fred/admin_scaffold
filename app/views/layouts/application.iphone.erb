@@ -3,7 +3,9 @@
 <html>
   <head>
     <title><%= h(yield(:title) || "Website") %></title>
-    <%= stylesheet_link_tag 'application' %>
+    <%= stylesheet_link_tag 'mobile/application' %>
+    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" />
+    <meta name="HandheldFriendly" content="True" />
     <%= yield(:head) %>
   </head>
   <body>
@@ -24,8 +26,9 @@
           <%= link_to("Logout", logout_path) %>
         </p>
       <% end %>
-      <p> <%= link_to "Mobile", :mobile => true %> </p>
+      <%= link_to "Desktop", :desktop => true %>
     </div>
     <%= render :partial => "/shared/license" %>
+    
   </body>
 </html>
