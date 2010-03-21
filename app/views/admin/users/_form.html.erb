@@ -1,0 +1,49 @@
+<div id="columnarForm">
+
+  <fieldset>
+		<legend>Login</legend>
+		<p>
+    	<%= f.label :login, t("login") %> <br />
+    	<%= f.text_field :login %>
+    </p>
+    <p>
+    	<%= f.label :email %> <br />
+    	<%= tag(:input, {:type => :email, :value => f.object.email} ) %>
+    </p>
+    <p>
+    	<%= f.label :password, t("password") %> <br />
+    	<%= f.password_field :password %>
+    </p>
+    <p>
+    	<%= f.label :password_confirmation, t('confirm_password') %> <br />
+    	<%= f.password_field :password_confirmation %>
+    	<span class="small_tip"><%=t("leave_password_blank_to_keep_current_password")%>.</span>
+    </p>
+	</fieldset>
+	
+	<fieldset>
+		<legend><%=t("user")%></legend>
+  	<p>
+    	<%= f.label :name, t("name") %> <br />
+    	<%= f.text_field :name %>
+    </p>
+    <p>
+    	<%= f.label :phone, t("phone") %> <br />
+    	<%= tag(:input, {:type => :number, :value => f.object.phone} ) %>
+    </p>
+    <p>
+    	<%= f.label :address, t("address") %> <br />
+    	<%= f.text_field :address %>
+    </p>
+    <% if show_admin_content? %>
+      <p>
+        <%= f.check_box :admin %>
+        <%= f.label :admin, t("admin") %>
+      </p>
+    <% end %>
+  </fieldset>
+
+    
+</div>
+
+<br clear="both"/>

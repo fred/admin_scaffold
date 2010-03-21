@@ -1,0 +1,379 @@
+pt-BR:
+  home: "home"
+  user: "Usuario"
+  users: "Usuarios"
+  email: "Email"
+  messages: "Mensagens"
+  new_messages: "Mensagens Novas"
+  settings: "Configuração"
+  logged_in_as: "sessão de"
+  my_account: "minha conta"
+  about: "Acerca"
+  welcome_back: "Bemvindo"
+  
+  leave_password_blank_to_keep_current_password: "Deixe a senha em branco para nao mudar"
+  confirm_password: "Confirme a senha"
+  password: "Senha"
+  login: "Login"
+  sign_in: "Login"
+  logout: "Logout"
+  sign_out: "Logout"
+  forgot_password: "Esqueceu a senha"
+  phone: "Telefone"
+  admin: "Admin"
+  remember_me: "Lembrar"
+  login_successful: "Login com sucesso!"
+  logout_successful: "Logout com sucesso!"
+  account_updated: "A conta foi atualizada com sucesso!"
+  account_registered: "Conta registrada com sucesso!"
+  are_you_sure: "Tem certeza?"
+  
+  name: "Nome"
+  email: "Email"
+  phone_number: "Telefone" 
+  message: "Mensagem"
+  leave_us_a_message: "Contato"
+  required_fields: "Campos necessários"
+  
+  menu: "Menu"
+  send_message: "Mandar Mensagem"
+  contact_us: "Contato"
+  contact: "Contato"
+  properties: "Propriedades"
+  properties_list: "Lista de Propriedades"
+  search: "Procurar"
+  map_search: "Procurar no Mapa"
+  map_ok: "Mapa"
+  map: "Mapa"
+  show_in_map: "Mostrar no mapa"
+  latitude: "Latitude"
+  longitude: "Longitude"
+  
+  location_in_map: "Localidade no Mapa"
+  subway_station: "Estação de Metro"
+  next_subway_station: "Estação de Metro proxima"
+  found: "Resultados"
+  nothing_found_in_category: "Disculpe, mas não encontrei nada aqui. :)"
+  
+  neighborhood: "Bairro"
+  neighbor: "Bairro"
+  information: "Informaçao"
+  description: "Descrição"
+  category: "Categoria"
+  title: "Titulo"
+  categories: "Categorias"
+  
+  location: "Localidade"
+  locations: "Localidades"
+  new_location: "Nova Localidade"
+  top_position: "Posição acima"
+  left_position: "Posição ezquerda"
+  
+  location: "Localidade"
+  city: "Cidade"
+  cities: "Cidades"
+  country: "Pais"
+  address: "Endereço"
+  rooms: "Quartos"
+  build_area: "Area Construida"
+  total_area: "Area Total"
+  bedrooms: "Dormitorios"
+  bathrooms: "Banheiros"
+  parking_slots: "Garagens"
+  size: "Tamanho"
+  #square_meters: "Metros quadrados"
+  square_meters: "m²"
+  between: "Entre"
+  and: "e"
+  to: "a"
+  with: "com"
+  
+  internet: "Internet"
+  cable_tv: "TV a cabo"
+  swimming_pool: "Piscina"
+  fitness: "Academia GYM"
+  has_internet: "Tem Internet"
+  has_cable_tv: "Tem TV a cabo"
+  has_swimming_pool: "Tem Piscina"
+  has_fitness: "Tem Academia GYM"
+  
+  house: "Casa"
+  appartment: "Apartamento"
+  office: "Escritorio"
+  store: "Loja"
+  
+  houses: "Casas"
+  appartments: "Apartamentos"
+  offices: "Escritorios"
+  stores: "Lojas"
+  locality_or_city_or_area: "Bairro, Cidade ou Endereço"
+  title_or_description: "Nome ou Descrição"
+  
+  building: "Edificio"
+  building_information: "Informação sobre o Edificio"
+  building_desc: "Informação sobre o Edificio"
+  building_fees: "Condomínio"
+  price_building_fees: "Taxa de Condomínio"
+  building_name: "Nome do Edificio"
+  contract_information: "Informação de Contrato"
+  contract: "Contrato"
+  price: "Preço"
+  prices: "Preços"
+  real_currency: "R$"
+  rent_price: "Preço de Aluguel"
+  sell_price: "Preço do Venda"
+  rent: "Aluguel"
+  sell: "Venda"
+  misc: "Outros"
+  available_at: "Data Disponivel"
+  
+  # Favoritos
+  favorites: "Favoritos"
+  #favorites_explain: "Click on the link <i>\"I like It\"</i> to add to your favorites"
+  favorites_explain: "Clique na imagen para selecionar o que voce gostou."
+  featured: "Especial"
+  featured_properties: "Propriedades Especiais"
+  featured_item: "Special"
+  item_choices: "Escolhas"
+  
+  thank_you_message_body: "Obrigado por deixar sua mensagem"
+  thank_you_message_title: "Estaremos em contato brevemente"
+  
+  property: "Propriedade"
+  properties: "Propriedades"
+  
+  languages: "Linguas"
+  language: "Lingua"
+  page: "Pagina"
+  pages: "Paginas"
+  permalink: "Permalink"
+  link_name: "Nome no Link"
+  order: "Ordem"
+  body: "Conteudo"
+  content: "Conteudo"
+  home_page: "Pagina Principal"
+  links: "Links"
+  
+  item: "Item"
+  items: "Itens"
+  all_items: "Todos Itens"
+  list: "Lista"
+  index: "Lista"
+  all: "Todos"
+  show: "Ver"
+  edit: "Alterar"
+  editing: "Alterando"
+  new: "Novo"
+  new_item: "Novo Item"
+  create: "Salvar"
+  created: "Salvo"
+  created_at: "Salvo em"
+  update: "Atualizar"
+  updated: "Atualizado"
+  updated_at: "Atualizado em"
+  del: "Apagar"
+  delete: "Apagar"
+  deleted: "Apagado"
+  destroy: "Apagar"
+  error: "Erro"
+  success: "Sucesso"
+  notice: "Atenção"
+  save: "Salvar"
+  reset: "Resetar"
+  back: "Voltar"
+  added: "Adicionado"
+  id: "ID"
+  more: "mais"
+  read_more: "lea mais"
+  
+  choose_file: "Escolha o arquivo"
+  download: "Baixar"
+  
+  save_photo: "Salvar Foto"
+  add_photo: "Adicionar Foto"
+  delete_photo: "Remover Foto"
+  delete: "Remover"
+  remove: "Remover"
+  edit_photo: "Alterar Foto"
+  asset: "Foto"
+  assets: "Fotos"
+  photo: "Foto"
+  photos: "Fotos"
+  photo01: "Foto #1"
+  photo02: "Foto #2"
+  photo03: "Foto #3"
+  photo04: "Foto #4"
+  photo05: "Foto #5"
+  photo06: "Foto #6"
+  photo07: "Foto #7"
+  photo08: "Foto #8"
+  photo09: "Foto #9"
+  photo10: "Foto #10"
+  photo11: "Foto #11"
+  photo12: "Foto #12"
+  
+  # formatos de data e hora
+  date:
+    formats:
+      default: "%d/%m/%Y"
+      short: "%d de %B"
+      long: "%d de %B de %Y"
+      list: "%d %b, %Y %H:%M"
+      mini: "%d/%b/%y"
+    
+    day_names: [Domingo, Segunda, Terça, Quarta, Quinta, Sexta, Sábado]
+    abbr_day_names: [Dom, Seg, Ter, Qua, Qui, Sex, Sáb]
+    month_names: [~, Janeiro, Fevereiro, Março, Abril, Maio, Junho, Julho, Agosto, Setembro, Outubro, Novembro, Dezembro]
+    abbr_month_names: [~, Jan, Fev, Mar, Abr, Mai, Jun, Jul, Ago, Set, Out, Nov, Dez]
+    order: [ :day, :month, :year ]
+  
+  time:
+    formats:
+      default: "%A, %d de %B de %Y, %H:%M"
+      short: "%d/%m, %H:%M"
+      long: "%A, %d de %B de %Y, %H:%M"
+      list: "%d %b, %Y %H:%M"
+      mini: "%d/%m/%y"
+      
+    am: ''
+    pm: ''
+  
+  # date helper distanci em palavras
+  datetime:
+    distance_in_words:
+      half_a_minute: 'meio minuto'
+      less_than_x_seconds:
+        one: 'menos de 1 segundo'
+        other: 'menos de {{count}} segundos'
+      
+      x_seconds:
+        one: '1 segundo'
+        other: '{{count}} segundos'
+      
+      less_than_x_minutes:
+        one: 'menos de um minuto'
+        other: 'menos de {{count}} minutos'
+      
+      x_minutes:
+        one: '1 minuto'
+        other: '{{count}} minutos'
+      
+      about_x_hours:
+        one: 'aproximadamente 1 hora'
+        other: 'aproximadamente {{count}} horas'
+      
+      x_days:
+        one: '1 dia'
+        other: '{{count}} dias'
+      
+      about_x_months:
+        one: 'aproximadamente 1 mês'
+        other: 'aproximadamente {{count}} meses'
+      
+      x_months:
+        one: '1 mês'
+        other: '{{count}} meses'
+      
+      about_x_years:
+        one: 'aproximadamente 1 ano'
+        other: 'aproximadamente {{count}} anos'
+      
+      over_x_years:
+        one: 'mais de 1 ano'
+        other: 'mais de {{count}} anos'
+    prompts:
+      year:   "Ano"
+      month:  "Mês"
+      day:    "Dia"
+      hour:   "Hora"
+      minute: "Minuto"
+      second: "Segundos"
+
+  # numeros
+  number:
+    format:
+      precision: 3
+      separator: ','
+      delimiter: '.'
+    currency:
+      format:
+        unit: 'R$'
+        precision: 2
+        format: '%u %n'
+        separator: ','
+        delimiter: '.'
+    percentage:
+      format:
+        delimiter: '.'
+    precision:
+      format:
+        delimiter: '.'
+    human:
+      format:
+        precision: 1
+        delimiter: '.'
+      storage_units:
+        format: "%n %u"
+        units:
+          byte:
+            one: "Byte"
+            other: "Bytes"
+          kb: "KB"
+          mb: "MB"
+          gb: "GB"
+          tb: "TB"
+
+# Used in array.to_sentence.
+  support:
+    array:
+      words_connector: ", "
+      two_words_connector: " e "
+      last_word_connector: " e "
+    
+  # Active Record
+  activerecord:
+    errors:
+      template:
+        header:
+          one: "Não foi possível gravar {{model}}: 1 erro"
+          other: "Não foi possível gravar {{model}}: {{count}} erros."
+        body: "Por favor, verifique o(s) seguinte(s) campo(s):"
+      messages:
+        inclusion: "não está incluído na lista"
+        exclusion: "não está disponível"
+        invalid: "não é válido"
+        confirmation: "não está de acordo com a confirmação"
+        accepted: "deve ser aceito"
+        empty: "não pode ficar vazio"
+        blank: "não pode ficar em branco"
+        too_long: "é muito longo (máximo: {{count}} caracteres)"
+        too_short: "é muito curto (mínimo: {{count}} caracteres)"
+        wrong_length: "não possui o tamanho esperado ({{count}} caracteres)"
+        taken: "já está em uso"
+        not_a_number: "não é um número"
+        greater_than: "deve ser maior do que {{count}}"
+        greater_than_or_equal_to: "deve ser maior ou igual a {{count}}"
+        equal_to: "deve ser igual a {{count}}"
+        less_than: "deve ser menor do que {{count}}"
+        less_than_or_equal_to: "deve ser menor ou igual a {{count}}"
+        odd: "deve ser ímpar"
+        even: "deve ser par"
+        record_invalid: "A validação falhou: {{errors}}"
+    attributes:
+      user:
+        name: "Nome"
+        email: "Email"
+        city: "Cidade"
+        country: "Pais"
+        phone_number: "Telefone"
+        mobile_number: "Telefone Celular"
+        password: "Senha"
+        password_confirmation: "Comfirmação da Senha"
+      message:
+        name: "Nome"
+        email: "Email"
+      item:
+        title: "Titulo"
+        description: "Descrição"
+        category: "Categoria"
+        

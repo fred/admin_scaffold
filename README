@@ -1,0 +1,30 @@
+== About == 
+
+Base Admin interface that I use for most rails applications
+
+It includes User and UserSession models for Authlogic authentication
+
+Also some basic tests only for user model/controller
+
+
+== Requirements == 
+
+authlogic
+factory_girl
+will_paginate
+
+
+== Getting Started
+
+1. rake db:migrate
+2. rake db:seed
+3. ruby ./script/server
+4. Go to http://localhost:3000/admin  
+5.  username: admin
+6.  password: welcome
+
+
+Enjoy!
+
+Anyone who wants to contribute, bug fix and improve, Please let me know!
+

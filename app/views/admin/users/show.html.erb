@@ -1,0 +1,20 @@
+<h3> <% @title ||= "#{t('users')} - #{@user.login}" %> </h3>
+
+<div id="columnarForm">
+
+    <fieldset>
+  		<legend><%= @user.login %></legend>
+  		<%= show_field(t("name"), @user.name) %>
+      <%= show_field(t("email"),@user.email) %>
+      <%= show_field(t("phone"), @user.phone) %>
+      <%= show_field(t("address"), @user.address) %>
+      <%= show_field(t("created_at"), @user.created_at.to_s(:long)) %>
+      <%= show_field(t("updated_at"), @user.updated_at.to_s(:long)) %>
+    </fieldset>
+
+  <br clear="both"/>
+  <%= link_to image_tag("admin/edit_button.png"), edit_admin_user_path(@user) %>
+  <%= link_to image_tag("admin/back_button.png"), admin_users_path %>
+
+</div>
+<br clear="both"/>

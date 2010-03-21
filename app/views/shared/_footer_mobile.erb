@@ -1,0 +1,38 @@
+<div id="footer">
+  
+  <div id="search">  
+    <% form_for @search, :url => {:controller => "items", :action => 'search'} do |f| %>
+      <div id="search-wrap">
+		    <%= f.text_field :title_or_description_like_any, :size => 24, :class => "search-input", :placeholder=> t("search") %>
+    	  <%= f.submit "", :id => "btn" %>
+    	</div>
+    <% end %>
+  </div>
+  
+  <p class="bold">
+    <%= link_to t("properties"), root_path %> |
+    <%= link_to t("map"), map_search_items_path %> |
+    <%= link_to t("search"), search_items_path %> |
+    <% @pages.each do |page| %>
+      <%= link_to page.link_title, permalink_url(page.permalink) %> | 
+    <% end %>
+    <%= link_to t("contact_us"), new_message_path %>
+  </p>
+  
+  <p class="bold">
+    <%= link_to "English", {:language => "en"}, :class => "bold red" %> | 
+    <%= link_to "Portugues", {:language => "pt-BR"}, :class => "bold red" %> | 
+    <%= link_to "Desktop", {:desktop => "true"}, :class => "bold red" %> | 
+    
+    <% if show_admin_content? %>
+      <%= link_to t("admin"), admin_path %> |
+    <% end %>
+    
+    <% if !current_user %>
+      <%= link_to "Login", new_user_session_path %>
+    <% else %>
+      <%= link_to "Logout", user_session_path, :method => :delete, :confirm => "Are you sure you want to logout?" %>
+    <% end %>
+  </p>
+  
+</div>
