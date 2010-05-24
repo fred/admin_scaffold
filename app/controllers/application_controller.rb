@@ -9,7 +9,6 @@ class ApplicationController < ActionController::Base
   helper_method :current_user_session, :current_user
 
   # Scrub sensitive parameters from your log
-  # filter_parameter_logging :password
   filter_parameter_logging :password, :password_confirmation
   
   before_filter :get_locale, :store_location

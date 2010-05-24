@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100122130636) do
+ActiveRecord::Schema.define(:version => 20100524072059) do
 
   create_table "sessions", :force => true do |t|
     t.string   "session_id", :null => false
@@ -20,6 +20,16 @@ ActiveRecord::Schema.define(:version => 20100122130636) do
 
   add_index "sessions", ["session_id"], :name => "index_sessions_on_session_id"
   add_index "sessions", ["updated_at"], :name => "index_sessions_on_updated_at"
+
+  create_table "settings", :force => true do |t|
+    t.string   "var"
+    t.text     "value"
+    t.text     "description"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "settings", ["var"], :name => "index_settings_on_var", :unique => true
 
   create_table "users", :force => true do |t|
     t.string   "login",                                  :null => false
@@ -46,9 +56,11 @@ ActiveRecord::Schema.define(:version => 20100122130636) do
     t.datetime "updated_at"
   end
 
+  add_index "users", ["admin"], :name => "index_users_on_admin"
   add_index "users", ["email"], :name => "index_users_on_email"
   add_index "users", ["last_request_at"], :name => "index_users_on_last_request_at"
-  add_index "users", ["login"], :name => "index_users_on_login"
-  add_index "users", ["persistence_token"], :name => "index_users_on_persistence_token"
+  add_index "users", ["login"], :name => "index_users_on_login", :unique => true
+  add_index "users", ["persistence_token"], :name => "index_users_on_persistence_token", :unique => true
+  add_index "users", ["single_access_token"], :name => "index_users_on_single_access_token", :unique => true
 
 end

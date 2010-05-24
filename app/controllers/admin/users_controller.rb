@@ -1,5 +1,5 @@
 class Admin::UsersController < Admin::BaseController
-
+  
   # GET /admin/users
   # GET /admin/users.xml
   def index
@@ -9,7 +9,6 @@ class Admin::UsersController < Admin::BaseController
 
     respond_to do |format|
       format.html # index.html.erb
-      format.iphone # index.iphone.erb
       format.xml  { render :xml => @users }
     end
   end
@@ -20,7 +19,6 @@ class Admin::UsersController < Admin::BaseController
     @user = User.find(params[:id])
     respond_to do |format|
       format.html # show.html.erb
-      format.iphone # show.iphone.erb
       format.xml  { render :xml => @user }
     end
     
@@ -33,7 +31,6 @@ class Admin::UsersController < Admin::BaseController
 
     respond_to do |format|
       format.html # new.html.erb
-      format.iphone # new.iphone.erb
       format.xml  { render :xml => @user }
     end
   end
@@ -54,8 +51,7 @@ class Admin::UsersController < Admin::BaseController
       if @user.update_attributes(params[:user])
         #@user.update_roles(params[:user][:role_ids])
         flash[:success] = 'User was successfully updated.'
-        format.iphone { redirect_to admin_users_path }
-        format.html { redirect_to admin_users_path }
+        format.html { redirect_to edit_admin_user_path(@user) }
         format.xml  { head :ok }
       else
         format.html { render :action => "edit" }
@@ -72,12 +68,12 @@ class Admin::UsersController < Admin::BaseController
     respond_to do |format|
       if @user.destroy
         flash[:success] = "User deleted"
+        format.html { redirect_to(admin_users_path) }
         format.xml  { head :ok }
       else
         flash[:error] = "Could not delete user"
+        format.html { redirect_to(admin_users_path) }
       end
-      format.iphone { redirect_to(admin_users_path) }
-      format.html { redirect_to(admin_users_path) }
     end
   end
   
@@ -95,6 +91,30 @@ class Admin::UsersController < Admin::BaseController
     end
   end
   
+  
+  def activate
+    @user = User.find(params[:id])
+    success = @user.activate_user
+    if success && @user.errors.empty?
+      flash[:success] = "User has been Activated."
+      redirect_to(admin_users_path)
+    else
+      flash[:error]  = "User could not be Activated."
+      redirect_to(admin_users_path)
+    end
+  end
+  
+  def deactivate
+    @user = User.find(params[:id])
+    success = @user.deactivate_user
+    if success && @user.errors.empty?
+      flash[:success] = "User has been Deactivated."
+      redirect_to(admin_users_path)
+    else
+      flash[:error]  = "Could not Deactivate User."
+      redirect_to(admin_users_path)
+    end
+  end
 
   private
   
