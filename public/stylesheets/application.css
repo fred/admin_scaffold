@@ -38,6 +38,16 @@ input,textarea {
   overflow: hidden;
 }
 
+#top_menu {
+  text-align: center;
+  width: 90%;
+  margin: 0 auto;
+  background-color: #EEE;
+  padding: 10px 20px;
+  border: solid 1px #666;
+  margin-top: 20px; 
+}
+
 #container {
   width: 90%;
   margin: 0 auto;

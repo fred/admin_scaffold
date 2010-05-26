@@ -39,29 +39,23 @@
         Administration Interface <span class="version"> version 0.5 </span>
       </h2>
       
+      <!-- HEADER START -->
       <div  id="header"> 
-        
         <div  id="dolphincontainer">
-          
           <div  id="dolphinnav">
-            <ul>
-              <%= link_to(image_tag("admin/home_icon.png", :class => "home_icon"), admin_path ) %>
-              <li>
-                <%= link_to "Home", admin_path, :class => is_current_menu("dashboard") %>
-              </li>
-              <li>
-                <%= link_to "Users", admin_users_path, :class => is_current_menu("users") %>
-              </li>
+            <ul><%= link_to(image_tag("admin/home_icon.png", :class => "home_icon"), admin_path ) %>
+              <li><%= link_to t("home"), admin_path, :class => is_current_menu("dashboard") %></li>
+              <li><%= link_to t("users"), admin_users_path, :class => is_current_menu("users") %></li>
+              <li><%= link_to t("settings"), admin_settings_path, :class => is_current_menu("settings") %></li>
             </ul>
           </div>
         </div>
       </div>
-      <!-- Header Ends here -->
+      <!-- HEADER END -->
         
       <br class="clear"/>
       
       <!-- Main Content Starts Here -->
-      
       <div id="main">
         
         <div class="content">
